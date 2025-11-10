@@ -7,6 +7,8 @@ const map = new mapboxgl.Map({
     });
 
 map.on('load', function() {
+    alert("Welcome to my web map! - Jozelle");
+  
     map.addSource('points-data', {
         type: 'geojson',
         data: 'https://raw.githubusercontent.com/jozelles/BAHA-MAP/refs/heads/main/data/183data.geojson'
